@@ -59,7 +59,6 @@ def  main():
      global final_horizontal
      global final_vertical
      global final_diagonal
-     global lista
      global tamanho
 
      while tamanho > 0:

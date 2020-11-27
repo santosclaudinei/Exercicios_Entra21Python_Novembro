@@ -15,12 +15,3 @@ sequência
 flush
     Cinco cartas com o mesmo naipe.
 """
-
-import exercises as cabecalho
-
-cabecalho.cabecalho("poker")
-
-
-
-
-
