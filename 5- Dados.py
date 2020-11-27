@@ -15,7 +15,7 @@ contador5 = 0
 contador6 = 0 
 
 for i in range(1, 101):
-    lista_valores.append(random.randint(1,6))
+    lista_valores.append(random.randint(1,6)) # Gostei e vou refatorar o meu numa unica linha. Ficou bacana.
        
 for valor in lista_valores:
     if valor == 1:
@@ -39,3 +39,19 @@ O dado caiu {contador4} vezes no número 4.
 O dado caiu {contador5} vezes no número 5.
 O dado caiu {contador6} vezes no número 6.
 """)
+
+"""
+Codigo bonito de se ver. Mas vou deixar uma dica pra fazer em menos linha e 
+eliminar a tripa de if  e deixar seu codigo ainda mais foda do que é sempre.
+PS: EU AMO UMA VISCERA DE IF. Mas como a senhorita tem codigos muito bons 
+estou fazendo essa observação. Desculpa por isso.
+
+from collections import Counter
+
+resultado = Counter(lancamentos) # Aqui o comando counter checa 
+quantas ocorrencias tiveram na lista de cada face do dado.
+
+for jogada, ocorrencia in resultado.items():
+    print(f'o lado do dado {jogada} ocorreu {ocorrencia} vezes')
+
+"""

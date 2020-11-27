@@ -7,6 +7,7 @@ Informe ao usuário as quantidades de tinta a serem compradas e os respectivos p
     comprar apenas galões de 3,6 litros;
     misturar latas e galões, de forma que o desperdício de tinta seja menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
 
+
 150 metros quadrados
 2 latas
 7 galões
@@ -17,6 +18,8 @@ import exercises as cabecalho
 
 cabecalho.cabecalho("loja de tintas")
 
+""" remover comentarios abaixo caso não sejam mais necessarios. """
+
 area_pintada = int(input("Insira o tamanho em metros quadrados a ser pintado: "))
 #resto = area_pintada - cont
 
@@ -24,7 +27,7 @@ def lata(area_pintada):
     latas = area_pintada/(18 * 6) * 1.1
     latas = round(latas)
     valor_lata = latas * 80
-    
+
     print(f"O valor a ser pago para cobrir {area_pintada} m² utilizando {latas} lata(s) de tinta é: {valor_lata:.2f}")
 
 def galao(area_pintada):
@@ -36,14 +39,16 @@ def galao(area_pintada):
 
 def lata_galao(area_pintada):
     latas = area_pintada/(18 * 6) * 1.1
-    print(latas)
+    print(latas)  # Remover a checagem
     latas = round(latas)
-    print(latas)
+    print(latas)  # Remover a checagem
 
     aux = area_pintada - (latas * (18 * 6))
 
     galao = aux/(3.6 * 6) * 1.1
     galao= round(galao)
+
+    """ Valor de galões esta dando negativo para uma area de 5000m² (verificar codigo dessa area) """
 
     valor_total = latas * 80  + galao * 25
     print(f"""

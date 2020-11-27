@@ -14,6 +14,9 @@ Faça um Programa que pergunte quanto você ganha por hora e o número de horas 
 """
 import exercises as cabecalho
 
+""" Visualmente eu sei o que ta sendo feito, mas não compreendi 
+como funciona a importação e uso do cabecalho. """
+
 cabecalho.cabecalho("salário")
 
 valor_hora = float(input("Insira o valor recebido por hora trabalhada: "))

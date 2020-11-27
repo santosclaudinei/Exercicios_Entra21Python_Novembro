@@ -18,11 +18,11 @@ def tipo_triangulo(a,b,c):
         print("Triângulo Equilátero")
     else:
         print("Triângulo Isósceles")
-
+""" Deixar dois espaços entre uma função e outra ou entre uma função e bloco de codigo. """
 if a < b + c and b < a + c and c < a + b:
     print("\nOs números infomados formam um triângulo\n")
     tipo_triangulo(a,b,c)
 else:
     print("\nOs números infomados não formam um triângulo")
-    
 
+""" Que codigo enxuto e bem feito. PARABÉNS AMANDA. Vou rever o meu. rs """

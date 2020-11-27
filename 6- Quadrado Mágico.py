@@ -15,7 +15,8 @@ cabecalho.cabecalho("quadrado mágico")
 quadrado = list(permutations([1,2,3,4,5,6,7,8,9]))
 print(len(quadrado))
 tamanho = len(quadrado)
-
+""" Porque as variaveis abaixo estão escuras. parecem que não estão sendo usadas.
+ pelo menos no Pycharm acontece isso comigo quando nao as uso. """
 def gera_valores():
      final_horizontal = False
      final_vertical = False
@@ -67,3 +68,8 @@ def  main():
                   
 if __name__ == "__main__":
     main()
+
+    """Não fiz esse e ainda não sei muito bem como funciona, mas:
+       - remover os comentarios do tipo que salva codigo.
+       - Deixar duas linhas após cada função
+    """

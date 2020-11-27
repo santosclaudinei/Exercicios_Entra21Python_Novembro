@@ -19,6 +19,8 @@ for dividendo in range(1, valor+1):
     if cont == 2:
         primos.append(dividendo)
 
-
 for primo in primos:
     print(primo)
+
+
+"""Mai uma vez parabéns pelo codigo organizado e bonito."""
